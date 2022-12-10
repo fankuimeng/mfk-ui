@@ -1,3 +1,9 @@
-import { testfun } from "@mfk-ui/utils";
-const result = testfun(1, 1);
-console.log(result);
+import reactifyWebComponent from '@mfk-ui/core';
+import './global-css';
+
+import MfkButton from './Button/index';
+
+const Button = reactifyWebComponent(MfkButton as any);
+console.log(Button);
+
+export { MfkButton, Button };
